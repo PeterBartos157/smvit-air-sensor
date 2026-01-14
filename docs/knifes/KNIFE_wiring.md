@@ -56,12 +56,8 @@ Senzory komunikujú cez **I²C** (SDA/SCL). AHT poskytne referenčnú teplotu/vl
 > Poznámka: Na combo moduloch ENS160+AHTxx môže ENS160 mierne zohrievať AHT – zvažuj **teplotný offset** (napr. −5 °C) kalibrovaný podľa reálnych podmienok.
 
 
-<img src="./images/wiring.png" alt="arduino-wiring" width="500">
-    Zdroj: 
-    <a href="https://fmh-studios.de/esp32/co2-sensor-ens160-esp32-tutorial/">
-        CO2-Sensor ENS160 – ESP32 Tutorial
-    </a>
-</img>
+<img src="./images/wiring.png" alt="arduino-wiring" width="500"/>
+Zdroj: [CO2-Sensor ENS160 – ESP32 Tutorial](https://fmh-studios.de/esp32/co2-sensor-ens160-esp32-tutorial/)
 
 ### Inštalácia knižníc
 - **Adafruit AHTx0** (AHT20/AHT21)
