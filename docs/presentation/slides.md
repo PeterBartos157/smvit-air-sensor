@@ -254,6 +254,8 @@ def receive_data():
         return fill_json_response(status=STATUS_ERROR, error="Internal server error")
 ```
 
+Server je hostovaný na platforme **Azure**.
+
 #### Zapojenie hardvéru a prototypovanie
 <figure>
   <img src="../images/esp32_wired.jpg" alt="zapojený mikrokontrolér" width="700" />
