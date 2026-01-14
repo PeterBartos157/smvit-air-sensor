@@ -6,17 +6,21 @@
 
 <figure>
   <img src="../images/intro.png" alt="clickbait" width="700" />
-  <figcaption>Obr.:  Model senzoru kvality ovzdušia</figcaption>
+  <figcaption>Obr.:  Model senzoru kvality ovzdušia.</figcaption>
 </figure>
+
+
+## Project Summary [🗂️ [zobraziť]](../sdlc/00-project-summary/index.md)
 
 Tento projekt je kompletné riešenie na meranie kvality ovzdušia pomocou syntézy mikrontroléra a senzorov.
 
 ## Introduction
-**2025-PRJ-023-ST_023-ST_023-Air quality monito**
+**2025-PRJ-023-ST_023-ST_023-Air quality monitor**
 
 Projekt rieši meranie kvality ovzdušia pomocou mikrokontroléra ESP32 a senzorov AHTX0 a ENS160, pričom údaje o teplote, vlhkosti, TVOC, eCO₂ a odvodenom AQI sú zobrazované na OLED displeji a odosielané na server. Server ich ukladá do databázy a poskytuje responzívne webové rozhranie na sledovanie aktuálnych hodnôt aj historických trendov. Prínosom je dostupné, cenovo efektívne riešenie pre monitoring kvality vzduchu s možnosťou vzdialeného prístupu k dátam.
 
 ## Obsah
+- [00-Project Summary](../sdlc/00-project-summary/index.md)
 - [01-Business](../sdlc/01-business/index.md)
 - [02-Top Level Architecture](../sdlc/02-top-level-architecture/index.md)
 - [03-Solution Architecture](../sdlc/03-solution-architecture/index.md)
@@ -26,6 +30,7 @@ Projekt rieši meranie kvality ovzdušia pomocou mikrokontroléra ESP32 a senzor
 - [07-Testing & Verification](../sdlc/07-testing-verification/index.md)
 - [08-Operation](../sdlc/08-operation/index.md)
 - [09-Change Management](../sdlc/09-Change-Management/index.md)
+- [10-Lemontree](../sdlc/09-Change-Management/lemontree.md)
 
 
 ## 01-Business
@@ -349,14 +354,28 @@ Všetky plánované funkcie boli implementované:
 Pre ďalšiu verziu projektu boli identifikované možnosti vylepšenia:
 
 
-Sofistikovanejšie Wi-Fi pripájanie
+- Sofistikovanejšie Wi-Fi pripájanie
 (konfigurácia cez webový portál alebo mobilnú aplikáciu).
 
 
-Lepšie uchopenie hardvéru v krabičke (presne vybudované drážky pre ESP32 a senzory, aby boli pevne uchytené a odolné voči pohybu).
+- Lepšie uchopenie hardvéru v krabičke (presne vybudované drážky pre ESP32 a senzory, aby boli pevne uchytené a odolné voči pohybu).
 
 
-Optimalizovaný prietok vzduchu (ventilačné otvory alebo mriežky, aby sa zabránilo skresleniu meraní spôsobenému uzavretým priestorom).
+- Optimalizovaný prietok vzduchu (ventilačné otvory alebo mriežky, aby sa zabránilo skresleniu meraní spôsobenému uzavretým priestorom).
 
 
 Implementácia týchto vylepšení by zvýšila presnosť meraní, mechanickú stabilitu a profesionálny vzhľad zariadenia.
+
+## 10-Lemontree [🗂️ [zobraziť]](../sdlc/09-Change-Management/lemontree.md)
+
+Nasledujúce obrázky zobrazujú proces porovnávania a zlúčenia modelov v nástroji Lemontree, ktorý sa používa na správu verzovania modelov vytvorených v Enterprise Architect (EA). Lemontree umožňuje identifikovať rozdiely medzi dvoma verziami modelu, vizualizovať zmeny a vykonať ich zlúčenie.
+
+<figure>
+  <img src="../images/lemontree_3.png" alt="lemontree" width="700" />
+  <figcaption>Obr.: Porovnanie modulov v hierarchii komponentov. Lemontree zobrazuje rozdiely v štruktúre modulov a ich vlastnostiach. V spodnej časti sú detailné zmeny atribútov (napr. názvy, typy).</figcaption>
+</figure>
+
+<figure>
+  <img src="../images/lemontree_4.png" alt="lemontree" width="700" />
+  <figcaption>Obr.: Zlúčenie rozdielov medzi dvoma verziami modelu. V hornej časti sú zobrazené tri stĺpce: pôvodná verzia, upravená verzia a cieľová verzia po zlúčení. V strede je vizualizovaný Use Case diagram s vyznačenými zmenami. V spodnej časti sú detailné informácie o zlúčených vlastnostiach.</figcaption>
+</figure>
