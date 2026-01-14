@@ -145,23 +145,27 @@ Cieľom projektu je vytvoriť zariadenie na monitorovanie kvality ovzdušia, kto
 
 ### Databázová schéma
 
-**users** (väzba používateľ ↔ zariadenie)
-| Stĺpec        | Typ     | Popis                         |
-|---------------|---------|-------------------------------|
-| id            | INTEGER | Primárny kľúč                 |
-| serial_number | TEXT    | Jedinečný identifikátor zariadenia |
 
-**sensor_realtime** (posledné merania na používateľa/zariadenie)
-| Stĺpec      | Typ     | Popis                          |
-|-------------|---------|--------------------------------|
-| id          | INTEGER | Primárny kľúč                  |
-| user_id     | INTEGER | FK na users.id                 |
-| temperature | REAL    | Teplota v °C                   |
-| humidity    | REAL    | Relatívna vlhkosť v %          |
-| aqi         | INTEGER | Index kvality vzduchu          |
-| co2         | REAL    | eCO₂ v ppm                     |
-| tvoc        | REAL    | TVOC                           |
-| timestamp   | INTEGER | Unix čas merania               |
+#### users (väzba používateľ ↔ zariadenie)
+
+| Stĺpec        | Typ     | Popis                                  |
+|---------------|---------|----------------------------------------|
+| id            | INTEGER | Primárny kľúč                         |
+| serial_number | TEXT    | Jedinečný identifikátor zariadenia    |
+
+#### sensor_realtime (posledné merania na používateľa/zariadenie)
+
+| Stĺpec      | Typ     | Popis                                  |
+|-------------|---------|----------------------------------------|
+| id          | INTEGER | Primárny kľúč                         |
+| user_id     | INTEGER | FK na users.id                        |
+| temperature | REAL    | Teplota v °C                          |
+| humidity    | REAL    | Relatívna vlhkosť v %                 |
+| aqi         | INTEGER | Index kvality vzduchu                 |
+| co2         | REAL    | eCO₂ v ppm                            |
+| tvoc        | REAL    | TVOC                                  |
+| timestamp   | INTEGER | Unix čas merania                      |
+
 
 ---
 
